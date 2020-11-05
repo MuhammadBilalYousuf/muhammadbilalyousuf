@@ -1,27 +1,50 @@
-import React from "react";
+import React, { Suspense, lazy } from "react";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import loadable from 'react-loadable';
 import "./App.scss";
 import "./styles/Services.scss";
 import "./styles/portfolio.css";
-import Header from "./components/Header";
-import Footer from "./components/Footer";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+
+const Header = lazy(() => import('./components/Header'));
+const Footer = lazy(() => import('./components/Footer'));
+
 // HomePage
-import HomePage from './pages/HomePage';
+// import HomePage from './pages/HomePage';
+const HomePage = loadable({
+  loader: () => import('./pages/HomePage'),
+  loading: () => <div>Loading...</div>
+})
 // End HomePage
 // Projects
-import ProjectsPage from './pages/Projects';
+const ProjectsPage = loadable({
+  loader: () => import('./pages/Projects'),
+  loading: () => <div>Loading...</div>
+})
 // End Projects
 // About Me
-import AboutMePage from './pages/AboutMe';
+const AboutMePage = loadable({
+  loader: () => import('./pages/AboutMe'),
+  loading: () => <div>Loading...</div>
+})
 // End About Me
 // Contact
-import ContactMePage from './pages/Contact';
+const ContactMePage = loadable({
+  loader: () => import('./pages/Contact'),
+  loading: () => <div>Loading...</div>
+})
 // End Contact
-// Not Found
-import NotFoundPage from './pages/NotFoundPage';
+// Found
+const NotFoundPage = loadable({
+  loader: () => import('./pages/NotFoundPage'),
+  loading: () => <div>Loading...</div>
+})
 // End Not Found
+
+
+
 function App() {
   return (
+    <Suspense fallback={<div></div>}>
     <Router>
       <div className="App">
         <Header />
@@ -41,6 +64,7 @@ function App() {
         <Footer />
       </div>
     </Router>
+    </Suspense>
   );
 }
 
