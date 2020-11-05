@@ -1,0 +1,27 @@
+     
+.container {
+    width: 1280px;
+    min-width: 1280px;
+.footer {
+      bottom:0;
+      width: 100%;
+      .Title-font{
+        font-size: 1.5rem;
+        @media (max-width: 599px) {
+          font-size: 1.5rem;
+        }
+      }
+    }
+  .footer-logo{
+      margin-left: -52px !important;
+      @media (max-width: 599px) {
+        margin-left: -29px !important;
+      }
+  }
+  .Logo-Size{
+    width: 10%;
+    @media (max-width: 599px) {
+      width: 20%;
+    }
+    }
+}

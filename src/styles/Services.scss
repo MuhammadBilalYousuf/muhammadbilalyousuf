@@ -1,0 +1,214 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,700i&display=swap");
+
+html {
+  body {
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  }
+}
+
+$break-small: 320px;
+$break-large: 1200px;
+
+.hero {
+  visibility: hidden;
+  height: 100vh;
+  .container {
+    width: 1280px;
+    min-width: 1280px;
+    margin: 0 auto;
+    height: 100%;
+    @media (max-width: 599px) {
+      width: 100%;
+      min-width: 100%;
+    }
+    .hero-inner {
+      // display: flex;
+      align-items: center;
+      justify-content: space-between;
+      // margin: 0 24px;
+      height: 100vh;
+      .hero-content {
+        // width: 50%;
+        @media (max-width: 599px) {
+          width: 0%;
+        }
+       
+        .hero-content-inner {
+          // width: 400px;
+          color: #323232;
+          margin: 0 auto;
+          @media (max-width: 599px) {
+            width: 400px;
+          }
+          h1 {
+            font-weight: 500;
+            font-size: 32px;
+            margin-bottom: 24px;
+            @media (max-width: 599px) {
+            font-size: 22px;
+            }
+            .hero-content-line {
+              margin: 0;
+              height: 44px;
+              overflow: hidden;
+              .hero-content-line-inner {
+                // font-weight: 700;
+// font-size: 4.514vw;
+// letter-spacing: -.11vw;
+              }
+            }
+          }
+          p {
+            font-size: 14px;
+            line-height: 24px;
+            padding-right: 48px;
+            margin-bottom: 56px;
+            @media (max-width: 599px) {
+              font-size: 10px;
+              padding-right: 96px;
+            }
+          }
+          .btn-row {
+            position: relative;
+            &:before {
+              position: absolute;
+              content: "";
+              width: 56px;
+              height: 1px;
+              background: #dfdfdf;
+              top: 50%;
+              left: -68px;
+            }
+            button {
+              background: none;
+              border: none;
+              font-size: 12px;
+              padding: 0;
+              cursor: pointer;
+              text-transform: uppercase;
+              font-weight: 700;
+              letter-spacing: 0.7px;
+              display: flex;
+              align-items: center;
+              position: relative;
+              &:focus {
+                outline: none;
+              }
+              .arrow-icon {
+                // position: absolute;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background: #000000;
+                height: 48px;
+                width: 48px;
+                border-radius: 100px;
+                margin-left: 16px;
+                left: 64px;
+                transform-origin: center center;
+              }
+            }
+          }
+        }
+      }
+      .hero-images {
+        width: 50%;
+        height: 100vh;
+        position: absolute;
+        @media (max-width: 599px) {
+        }
+        .hero-images-inner {
+          .hero-image {
+            position: absolute;
+            overflow: hidden;
+            &.first {
+              top: 100px;
+              width: 85%;
+              height: 100%;
+              @media (max-width: 599px) {
+              }
+            }
+            &.second {
+              top: 100px;
+              left: 100%;
+              width: 85%;
+              height: 100%;
+              @media (max-width: 599px) {
+              }
+            }
+            img {
+              position: absolute;
+              width: 100%;
+            }
+          }
+        }
+      }
+      .hero-images2 {
+        width: 50%;
+        height: 100vh;
+        position: absolute;
+        top: 150%;
+        @media (max-width: 599px) {
+          
+        }
+        .hero-images-inner {
+          .hero-image {
+            position: absolute;
+            overflow: hidden;
+            &.first {
+              width: 85%;
+              height: 100%;
+              @media (max-width: 599px) {
+              }
+            }
+            &.second {
+              left: 100%;
+              width: 85%;
+              height: 100%;
+              @media (max-width: 599px) {
+              }
+            }
+            img {
+              position: absolute;
+              width: 100%;
+            }
+          }
+        }
+      }
+      .hero-images3 {
+        width: 50%;
+        height: 100vh;
+        position: absolute;
+        // top: 197%;
+        @media (max-width: 599px) {
+        }
+        .hero-images-inner {
+          .hero-image {
+            position: absolute;
+            overflow: hidden;
+            &.first {
+              width: 85%;
+              height: 100%;
+              @media (max-width: 599px) {
+              }
+            }
+            &.second {
+              left: 100%;
+              width: 85%;
+              height: 100%;
+              @media (max-width: 599px) {
+              }
+            }
+            img {
+              position: absolute;
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
