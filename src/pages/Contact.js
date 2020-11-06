@@ -1,6 +1,8 @@
 import React from 'react';
 import { Row, Col } from 'react-grid-system';
+import "../styles/HomePage.scss";
 import "../styles/Contact.scss";
+import "../styles/About.scss";
 import { FiMessageSquare } from "react-icons/fi";
 import emailjs from 'emailjs-com';
 import swal from 'sweetalert';

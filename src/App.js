@@ -1,12 +1,12 @@
-import React, { Suspense, lazy } from "react";
+import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import loadable from 'react-loadable';
 import "./App.scss";
 import "./styles/Services.scss";
 import "./styles/portfolio.css";
 
-const Header = lazy(() => import('./components/Header'));
-const Footer = lazy(() => import('./components/Footer'));
+import Header from './components/Header';
+import Footer from './components/Footer';
 
 // HomePage
 // import HomePage from './pages/HomePage';
@@ -44,7 +44,6 @@ const NotFoundPage = loadable({
 
 function App() {
   return (
-    <Suspense fallback={<div></div>}>
     <Router>
       <div className="App">
         <Header />
@@ -64,7 +63,6 @@ function App() {
         <Footer />
       </div>
     </Router>
-    </Suspense>
   );
 }
 

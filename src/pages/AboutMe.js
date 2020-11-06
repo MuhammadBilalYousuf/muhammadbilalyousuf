@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Container, Row, Col } from 'react-grid-system';
+import "../styles/HomePage.scss";
 import "../styles/About.scss";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
