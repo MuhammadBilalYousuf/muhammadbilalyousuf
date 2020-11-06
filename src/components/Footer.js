@@ -1,6 +1,7 @@
 import React from 'react'
 import { Container, Row, Col } from 'react-grid-system';
 import "../styles/Footer.scss";
+import "../styles/HomePage.scss";
 import { FaInstagram, FaLinkedinIn } from "react-icons/fa";
 import Logo from '../images/mby-logo.png';
 
