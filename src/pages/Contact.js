@@ -1,8 +1,6 @@
 import React from 'react';
 import { Row, Col } from 'react-grid-system';
-import "../styles/HomePage.scss";
 import "../styles/Contact.scss";
-import "../styles/About.scss";
 import { FiMessageSquare } from "react-icons/fi";
 import emailjs from 'emailjs-com';
 import swal from 'sweetalert';
@@ -242,17 +240,18 @@ class Form extends React.Component {
 
 const Contact = () => {
     return (
-        <div>
-            <h3>
-            <div className="wrapper5">
+      <>
+      <div>
+        <div className="wrapper5">
+        <h5>
             <Row>
             <Col sm={7}>
-          <p className="About-Title-font">CONTACT</p>
-          <strong className="About-Detail-font">
-          Get in touch 
-          <br></br>
+            <p className="About-Title-font">DEVELOPMENT SERVICES</p>
+            <strong className="About-Platforms-font">
+            Get in touch 
+            <br></br>
           — let’s work together.
-          </strong>
+            </strong>
             <br></br>
           <b className="About-Detail">
           Got a project? Drop me a line if you want to work together on something exciting. Big or small.
@@ -263,12 +262,11 @@ const Contact = () => {
             <Form />
             </Col>
             </Row>
-            <br></br>
-            <br></br>
-            <hr></hr>
-            </div>
-            </h3>
+        </h5>
         </div>
+        <hr></hr>
+      </div>
+      </>
     )
 }
 

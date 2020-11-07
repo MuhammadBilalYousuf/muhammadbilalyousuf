@@ -2,14 +2,14 @@ import React, { Component } from "react";
 import { Container, Row, Col } from 'react-grid-system';
 import "../styles/HomePage.scss";
 import "../styles/About.scss";
-import "react-responsive-carousel/lib/styles/carousel.min.css";
-import { Carousel } from 'react-responsive-carousel';
-import Image1 from "../images/image1.jpeg";
-import Image2 from "../images/image2.jpeg";
-import Image3 from "../images/image3.jpg";
-import Image4 from "../images/image4.jpeg";
-import Image5 from "../images/image5.jpg";
+import Image1 from "../images/me/image1.jpeg";
+import Image2 from "../images/me/image2.jpeg";
+import Image3 from "../images/me/image3.jpg";
+import Image4 from "../images/me/image_4.jpeg";
+import Image5 from "../images/me/image_5.jpg";
 import { FiCornerUpRight } from "react-icons/fi";
+import AwesomeSlider from 'react-awesome-slider';
+import 'react-awesome-slider/dist/styles.css';
 
 
 class Table extends Component {
@@ -55,9 +55,11 @@ class Table extends Component {
 }
  
 const AboutMe = () => {
+
     return (
       <>
       <div>
+      <div className="wrapper10">
       <div className="wrapper5">
           <p className="About-Title-font">A FEW WORDS ABOUT ME</p>
           <strong className="About-Detail-font">
@@ -65,37 +67,30 @@ const AboutMe = () => {
           </strong>
             <br></br>
           <b className="About-Detail">Over the past 4 years I have been working with big companies and rising startups as a full stack developer, working solo and leading small developer teams. In my spare time I enjoy doing Martial arts and travel adventures.</b>
+      </div>
 <br></br>
 <br></br>
-        <Carousel className="carousel-items">
-               <div>
-                    <img src={Image1} alt="me"/>
-                </div>
-                <div>
-                    <img src={Image2} alt="me"/>
-                </div>
-                <div>
-                    <img src={Image3} alt="me"/>
-                </div>
-                <div>
-                    <img src={Image4} alt="me"/>
-                </div>
-                <div>
-                    <img src={Image5} alt="me"/>
-                </div>
-            </Carousel>
+   <AwesomeSlider animation="cubeAnimation" className="AwesomeSlider" >
+    <div data-src={Image1} />
+    <div data-src={Image2} />
+    <div data-src={Image3} />
+    <div data-src={Image4} />
+    <div data-src={Image5} />
+  </AwesomeSlider>
 <br></br>
 <br></br>
+      <div className="wrapper5">
             <p className="About-Title-font">EXPERIENCE</p>
             <strong className="About-Services-font">
             Over 4 years of experience
-            {/* I have 4+ Years Experience and my Journey is just begin  */}
             </strong>
             <br></br>
 <br></br>
       <Table/>
+      </div>
 <br></br>
 <br></br>
+      <div className="wrapper5">
             <Container>
             <Row>
             <Col sm={6} style={{textAlign: 'center'}}>
@@ -122,8 +117,9 @@ const AboutMe = () => {
           <a href="/contact">Let’s work together <FiCornerUpRight/></a>
           </b>
         </h5>
-        <hr></hr>
       </div>
+      </div>
+      <hr></hr>
       </div>
       </>
     )
