@@ -5,8 +5,11 @@ import "../styles/About.scss";
 import Image1 from "../images/me/image1.jpeg";
 import Image2 from "../images/me/image2.jpeg";
 import Image3 from "../images/me/image3.jpg";
-import Image4 from "../images/me/image_4.jpeg";
-import Image5 from "../images/me/image_5.jpg";
+import Image4 from "../images/me/image4.jpg";
+import Image5 from "../images/me/image5.jpg";
+import Image6 from "../images/me/image6.jpg";
+import Image7 from "../images/me/image7.jpg";
+import Image8 from "../images/me/image8.jpg";
 import { FiCornerUpRight } from "react-icons/fi";
 import AwesomeSlider from 'react-awesome-slider';
 import 'react-awesome-slider/dist/styles.css';
@@ -76,6 +79,9 @@ const AboutMe = () => {
     <div data-src={Image3} />
     <div data-src={Image4} />
     <div data-src={Image5} />
+    <div data-src={Image6} />
+    <div data-src={Image7} />
+    <div data-src={Image8} />
   </AwesomeSlider>
 <br></br>
 <br></br>
