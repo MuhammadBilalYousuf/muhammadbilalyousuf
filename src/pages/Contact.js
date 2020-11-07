@@ -246,7 +246,7 @@ const Contact = () => {
         <h5>
             <Row>
             <Col sm={7}>
-            <p className="About-Title-font">DEVELOPMENT SERVICES</p>
+            <p className="About-Title-font">CONTACT</p>
             <strong className="About-Platforms-font">
             Get in touch 
             <br></br>
