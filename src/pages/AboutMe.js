@@ -20,12 +20,12 @@ class Table extends Component {
      super(props) 
      this.state = { 
       experience: [
-          { name: 'GlobalxSolutions', age: 'Founder, Full Stack Developer', email: 'December 2018 — Present' },
-          { name: 'Codup', age: 'Senior Full Stack Developer', email: 'November 2020 — Present' },
-          { name: 'Digitonics Labs Pvt. Ltd', age: 'Senior Full Stack Developer', email: 'June 2020 — October 2020' },
+          { name: 'GlobalxSolutions', age: 'Founder, Lead Software Engineer', email: 'December 2018 — Present' },
+          { name: 'Codup', age: 'Senior Software Engineer', email: 'November 2020 — Present' },
+          { name: 'Digitonics Labs Pvt. Ltd', age: 'Software Engineer', email: 'June 2020 — October 2020' },
           { name: 'Zeroland Digital', age: 'Senior Full Stack Developer', email: 'January 2020 — May 2020' },
-          { name: 'Universal Solutions', age: 'Senior Developer', email: 'February 2019 — November 2019' },
-          { name: 'Synapse Consulting', age: 'Junior Web Developer', email: 'January 2017 — December 2018' }
+          { name: 'Universal Solutions', age: 'Full Stack Developer', email: 'February 2019 — November 2019' },
+          { name: 'Synapse Consulting', age: 'Software Developer', email: 'January 2017 — December 2018' }
         ]
      }
   }
