@@ -94,7 +94,7 @@ function Footer() {
             </Row>
             <Row className="footer-logo">
             <Col sm={12}>
-            <img src={Logo} className="Logo-Size" alt="Logo"></img>© 2020 Muhammad Bilal Yousuf.
+            <img src={Logo} className="Logo-Size" alt="Logo"></img>© 2021 Muhammad Bilal Yousuf.
             </Col>
             </Row>
         </Container>

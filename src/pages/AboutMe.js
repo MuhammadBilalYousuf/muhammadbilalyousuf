@@ -21,11 +21,11 @@ class Table extends Component {
      this.state = { 
       experience: [
           { name: 'GlobalxSolutions', age: 'Founder, Lead Software Engineer', email: 'December 2018 — Present' },
-          { name: 'Codup', age: 'Senior Software Engineer', email: 'November 2020 — Present' },
-          { name: 'Digitonics Labs Pvt. Ltd', age: 'Software Engineer', email: 'June 2020 — October 2020' },
-          { name: 'Zeroland Digital', age: 'Senior Full Stack Developer', email: 'January 2020 — May 2020' },
-          { name: 'Universal Solutions', age: 'Full Stack Developer', email: 'February 2019 — November 2019' },
-          { name: 'Synapse Consulting', age: 'Software Developer', email: 'January 2017 — December 2018' }
+          { name: 'Codup', age: 'Software Engineer', email: 'November 2020 — Present' },
+          { name: 'Digitonics Labs Pvt. Ltd', age: 'Software Engineer', email: 'June 2020 — November 2020' },
+          { name: 'Zeroland Digital', age: 'Full Stack Developer', email: 'January 2020 — May 2020' },
+          { name: 'Universal Solutions', age: 'Full Stack Developer', email: 'February 2019 — December 2019' },
+          { name: 'Synapse Consulting', age: 'Software Developer', email: 'November 2017 — December 2018' }
         ]
      }
   }
@@ -70,7 +70,7 @@ const AboutMe = () => {
           I’m Muhammad Bilal Yousuf, highly-skilled Software Engineer from Karachi Pakistan who enjoys leaderships and mentoring and loves to writes software to build great products and help businesses succeed with their goals. I’m fascinated by leverage and always looking for opportunities to increase my ability and performance by acting as a force multiplier, comfortable at all levels of the software development stack.
           </strong>
             <br></br>
-          <b className="About-Detail">Over the past 4 years I have been working with big companies and rising startups as a full stack developer, working solo and leading small developer teams. In my spare time I enjoy doing Martial arts and travel adventures.</b>
+          <b className="About-Detail">Over the past years I have been working with big companies and rising startups as a full stack developer, working solo and leading small developer teams. In my spare time I enjoy doing Martial arts and travel adventures.</b>
       </div>
 <br></br>
 <br></br>
@@ -89,7 +89,7 @@ const AboutMe = () => {
       <div className="wrapper5">
             <p className="About-Title-font">EXPERIENCE</p>
             <strong className="About-Services-font">
-            Over 4 years of experience
+            Over 3+ years of experience
             </strong>
             <br></br>
 <br></br>
@@ -103,13 +103,13 @@ const AboutMe = () => {
             <Col sm={6} style={{textAlign: 'center'}}>
             <p className="About-Title-font">DEVELOPMENT SERVICES</p>
             <strong className="About-Platforms-font">
-            Font-end Development / Back-end Development / CRM development / ERP development / E-commerce Development
+            Back-end Development / CRM development / ERP development / E-commerce Development / Font-end Development 
             </strong>
             </Col>
             <Col sm={6} style={{textAlign: 'center'}}>
             <p className="About-Title-font">TECHNOLOGIES I USE</p>
             <strong className="About-Platforms-font">
-            ReactJs / NodeJs / Php / Python / WordPress / Gatsby / Yii2 / Magento 2 / OpenCart / Shopify
+            Php / WordPress / NodeJs / Python / ReactJs / Yii2 / WooCommerce / Magento 2 / OpenCart / Shopify
             </strong>
             </Col>
             </Row>
