@@ -89,7 +89,7 @@ const AboutMe = () => {
       <div className="wrapper5">
             <p className="About-Title-font">EXPERIENCE</p>
             <strong className="About-Services-font">
-            Over 3+ years of experience
+            Over 4+ years of experience
             </strong>
             <br></br>
 <br></br>
